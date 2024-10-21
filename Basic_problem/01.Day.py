@@ -92,4 +92,91 @@ def arms(nums):
 
 # print(armstrong(153))  # Should print "Armstrong"
 # print(armstrong(123))  # Should print "Not Armstrong"
+
+
+
+#fibnocci series
+
+def fibo(num):
+    first = 0
+    second = 1
+    fib = []
+    for _ in  range(num):
+        fib.append(first)
+        next_number = first + second
+        first = second
+        second = next_number
+    return fib
         
+        
+        
+        
+# print(fibo(15))
+
+
+
+
+# # Creating the armstrong number
+
+# def practice(num):
+#     original_num = num
+#     add_num = 0
+#     length = len(str(num))
+#     while num > 0:
+#         rem = num % 10
+#         add_num += pow(rem, length)
+#         num = num // 10
+        
+#     if original_num == add_num:
+#         return "Arms"
+    
+#     return "Not Arms"
+
+# print(practice(153))
+
+
+# To check that the given string is palindrome or not
+
+# def palindrome(word):
+#     characters = list(word)
+#     store_char = []
+#     duplicate_char = ""
+#     for char in characters:
+#         store_char.append(char)
+#     for duplicate in len(store_char)-1:
+#         duplicate_char += duplicate
+#     if duplicate_char == word:
+#         return "palindrome"
+#     return "Not Palindrome"
+        
+    
+    
+# print(palindrome("Mango"))     This is the first method tried with but failed
+
+       
+       
+        
+
+
+
+
+def palindrome(word):
+    normalize_word = word.lower()
+    reversed_word = ""
+    for i in range(len(normalize_word) - 1, -1, -1):
+        reversed_word += normalize_word[i]
+     
+    if reversed_word == normalize_word:  # Indentation fixed here
+        return "Palindrome"  # Fixed spelling
+    return "Not Palindrome"
+
+# print(palindrome("alaa"))    
+
+
+
+
+# Creating the different * patterns
+
+  
+  
+    
